@@ -1,3 +1,3 @@
 public interface IDestroyable{
-    void DestroySelf();
+    void TakeDamage(float amount);
 }

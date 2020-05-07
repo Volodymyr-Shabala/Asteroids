@@ -1,5 +1,5 @@
 using UnityEngine;
 
 public interface IObject : IDestroyable{
-    Rigidbody2D rigidbody{ get; set; }
+    Rigidbody2D Rigidbody2D{ get; set; }
 }

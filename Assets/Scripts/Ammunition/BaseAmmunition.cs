@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Assertions;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public abstract class BaseAmmunition : MonoBehaviour, IMovable
@@ -14,6 +15,7 @@ public abstract class BaseAmmunition : MonoBehaviour, IMovable
     protected virtual void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
+        Assert.IsNotNull(m_Rigidbody, $"Rigidbody2D needs to be assigned in {name}");
         m_Timer = Time.time + k_MaxTimeAlive;
     }
 
@@ -30,11 +32,6 @@ public abstract class BaseAmmunition : MonoBehaviour, IMovable
         m_Rigidbody.AddForce(m_MoveForce * Time.deltaTime * dir, ForceMode2D.Impulse);
     }
 
-    protected virtual void ApplyDamage(IHealth target)
-    {
-        target.Health -= m_Damage;
-    }
-
     protected virtual void DestroySelf()
     {
         Destroy(gameObject);
@@ -42,11 +39,11 @@ public abstract class BaseAmmunition : MonoBehaviour, IMovable
 
     protected void OnCollisionEnter2D(Collision2D other)
     {
-        IHealth target = other.collider.GetComponent<IHealth>();
+        IDestroyable target = other.collider.GetComponent<IDestroyable>();
 
         if (target != null)
         {
-            ApplyDamage(target);
+            target.TakeDamage(m_Damage);
             DestroySelf();
         }
     }

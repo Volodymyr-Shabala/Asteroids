@@ -7,6 +7,65 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/PlayerWeaponInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ammunition/Rocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Engine/BaseEngineHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponParts/IWeaponsHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/BaseWeaponHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ship/PlayerShip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Engine/BaseEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Engine/PlayerEngineInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Engine/EngineParts/IMovable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponParts/IWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Engine/IEngine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ammunition/BaseAmmunition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/BulletWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IDestroyable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/BaseWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapon/RocketWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpaceObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Engine/EngineParts/IEngineHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Engine/EngineManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Engine/EngineParts/IRotatableZAxis.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ammunition/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponsHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponsShootHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponInputListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/EngineHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/IEngineHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/Rigidbody2DEngine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/EngineInputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/EngineParts/BaseEngineHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/IEngine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/BaseEngine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/PlayerEngineInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/EngineManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponParts/BaseWeaponHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponParts/WeaponInputListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/PlayerWeaponInputListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/PlayerWeaponInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/WeaponParts/IWeaponsHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/EngineParts/IRotatableZAxis.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/EngineParts/IMovable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Engine/BaseEngineHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapon/BaseWeapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IDestroyable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ship/PlayerShip.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpaceObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ammunition/BaseAmmunition.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1bUSXtNZmxGOYGZwDr26jr1UZsa" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,5 +94,15 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="715" y="395" key="#Notifications" timestamp="1588687463369">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="715" y="395" key="#Notifications/0.0.1680.1050@0.0.1680.1050" timestamp="1588687463369" />
+    <state x="652" y="233" key="RiderGenerateDialog" timestamp="1588766849368">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="652" y="233" key="RiderGenerateDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1588766849368" />
   </component>
 </project>

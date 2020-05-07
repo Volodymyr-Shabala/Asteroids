@@ -1,28 +1,24 @@
 using UnityEngine;
+using UnityEngine.Assertions;
 
 public abstract class BaseWeapon : MonoBehaviour, IWeapon
 {
     protected Transform[] m_ShootPositions;
     [SerializeField] protected BaseAmmunition m_BaseAmmunition;
     [SerializeField] protected float m_TimeBetweenShots = 0.2f;
-    protected float m_Timer;
+    protected float m_TimeHolder;
+    private bool m_Initialized;
 
     public void Init(Transform[] shootPositions)
     {
+        Assert.IsFalse(m_Initialized, $"Trying to initialize already initialized class in {name}");
         m_ShootPositions = shootPositions;
-    }
-    
-    protected virtual void Update()
-    {
-        if (m_Timer > 0)
-        {
-            m_Timer -= Time.deltaTime;
-        }
+        m_Initialized = true;
     }
 
     public virtual void Fire()
     {
-        if (!CanFire())
+        if (!CanFire() || !m_Initialized)
         {
             return;
         }
@@ -30,14 +26,14 @@ public abstract class BaseWeapon : MonoBehaviour, IWeapon
         int length = m_ShootPositions.Length;
         for (int i = 0; i < length; i++)
         {
-            Instantiate(m_BaseAmmunition, m_ShootPositions[i].position, m_ShootPositions[i].rotation);
+            Instantiate(m_BaseAmmunition, m_ShootPositions[i].position, m_ShootPositions[i].rotation, transform);
         }
 
-        m_Timer = m_TimeBetweenShots;
+        m_TimeHolder = m_TimeBetweenShots + Time.time;
     }
 
-    protected virtual bool CanFire()
+    protected bool CanFire()
     {
-        return m_Timer <= 0;
+        return m_TimeHolder <= Time.time;
     }
 }
