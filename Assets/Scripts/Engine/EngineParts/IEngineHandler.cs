@@ -1,5 +1,6 @@
+using UnityEngine;
+
 public interface IEngineHandler
-{
-    void Init(IEngine engine);
-    void ReceiveInput(float horizontal, float vertical);
+{ 
+    void ReceiveInput(Vector2 movementInput, float rotationInput);
 }

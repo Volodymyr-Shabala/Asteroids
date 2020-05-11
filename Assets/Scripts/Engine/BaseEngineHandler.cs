@@ -1,55 +1,57 @@
+using System;
 using UnityEngine;
 using UnityEngine.Assertions;
 
 public class BaseEngineHandler : MonoBehaviour, IEngineHandler
 {
     protected IEngine m_Engine;
-    protected float m_HorizontalInput;
-    protected float m_VerticalInput;
+    protected Vector2 m_MovementInput;
+    protected float m_RotationInput;
     protected const float k_InputTolerance = 0.001f;
 
-    private bool m_Initialized;
+    protected Func<Vector2> m_MovementInputFunc;
+    protected Func<float> m_RottationInputFunc;
 
-    public void Init(IEngine engine)
+    protected virtual void Start()
     {
-        Assert.IsFalse(m_Initialized, $"Trying to initialize already initialized class in {name}. ");
-        m_Engine = engine;
-        m_Initialized = true;
+        m_Engine = GetComponent<IEngine>();
+        Assert.IsNotNull(m_Engine, $"No Engine has been found on this GameObject. {name} requires it.");
     }
-
+    
     protected virtual void FixedUpdate()
     {
-        if (!m_Initialized)
-        {
-            return;
-        }
-
         ApplyInput();
         ResetInputValues();
     }
 
-    public virtual void ReceiveInput(float horizontal, float vertical)
+    public virtual void ReceiveInput(Func<Vector2> movementInput, Func<float> rotationInput)
     {
-        if (Mathf.Abs(horizontal) > k_InputTolerance)
+        m_MovementInputFunc = movementInput;
+        m_RottationInputFunc = rotationInput;
+    }
+    
+    public virtual void ReceiveInput(Vector2 movementInput, float rotationInput)
+    {
+        if (Mathf.Abs(movementInput.sqrMagnitude) > k_InputTolerance)
         {
-            m_HorizontalInput = horizontal;
+            m_MovementInput = movementInput;
         }
 
-        if (Mathf.Abs(vertical) > k_InputTolerance)
+        if (Mathf.Abs(rotationInput) > k_InputTolerance)
         {
-            m_VerticalInput = vertical;
+            m_RotationInput = rotationInput;
         }
     }
 
     protected virtual void ApplyInput()
     {
-        m_Engine.Move(transform.up * m_VerticalInput);
-        m_Engine.Rotate(m_HorizontalInput);
+        m_Engine.Move(m_MovementInput);
+        m_Engine.Rotate(m_RotationInput);
     }
 
     protected virtual void ResetInputValues()
     {
-        m_HorizontalInput = 0;
-        m_VerticalInput = 0;
+        m_MovementInput = new Vector2(0, 0);
+        m_RotationInput = 0;
     }
 }

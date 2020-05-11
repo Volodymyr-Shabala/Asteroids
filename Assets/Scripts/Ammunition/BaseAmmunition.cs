@@ -39,7 +39,7 @@ public abstract class BaseAmmunition : MonoBehaviour, IMovable
 
     protected void OnCollisionEnter2D(Collision2D other)
     {
-        IDestroyable target = other.collider.GetComponent<IDestroyable>();
+        IDamageable target = other.collider.GetComponent<IDamageable>();
 
         if (target != null)
         {

@@ -12,30 +12,35 @@
             <e p="Bullet.cs" t="Include" />
             <e p="Rocket.cs" t="Include" />
           </e>
+          <e p="Asteroid" t="Include">
+            <e p="Asteroid.cs" t="Include" />
+            <e p="AsteroidDestroyManager.cs" t="Include" />
+            <e p="AsteroidSetup.cs" t="Include" />
+            <e p="AsteroidSpawnManager.cs" t="Include" />
+            <e p="IAsteroid.cs" t="Include" />
+            <e p="IAsteroidDestroyManager.cs" t="Include" />
+          </e>
           <e p="Engine" t="Include">
             <e p="BaseEngine.cs" t="Include" />
             <e p="BaseEngineHandler.cs" t="Include" />
-            <e p="EngineManager.cs" t="Include" />
             <e p="EngineParts" t="Include">
+              <e p="IEngine.cs" t="Include" />
               <e p="IEngineHandler.cs" t="Include" />
               <e p="IMovable.cs" t="Include" />
               <e p="IRotatableZAxis.cs" t="Include" />
             </e>
-            <e p="IEngine.cs" t="Include" />
-            <e p="PlayerEngineInput.cs" t="Include" />
           </e>
-          <e p="IDestroyable.cs" t="Include" />
-          <e p="IHealth.cs" t="Include" />
-          <e p="IObject.cs" t="Include" />
-          <e p="Ship" t="Include">
+          <e p="IDamageable.cs" t="Include" />
+          <e p="PlayerShip" t="Include">
+            <e p="PlayerEngineInput.cs" t="Include" />
             <e p="PlayerShip.cs" t="Include" />
+            <e p="PlayerWeaponInput.cs" t="Include" />
           </e>
           <e p="SpaceObject.cs" t="Include" />
           <e p="Weapon" t="Include">
             <e p="BaseWeapon.cs" t="Include" />
             <e p="BaseWeaponHandler.cs" t="Include" />
             <e p="BulletWeapon.cs" t="Include" />
-            <e p="PlayerWeaponInput.cs" t="Include" />
             <e p="RocketWeapon.cs" t="Include" />
             <e p="WeaponManager.cs" t="Include" />
             <e p="WeaponParts" t="Include">
