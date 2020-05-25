@@ -11,13 +11,14 @@ GameObject:
   - component: {fileID: 3830980005548932610}
   - component: {fileID: 3830980005548932611}
   - component: {fileID: 2618735266510572700}
+  - component: {fileID: 1153316793}
   - component: {fileID: 1159556346602313872}
   - component: {fileID: 1479853951}
   - component: {fileID: 1479853952}
   - component: {fileID: 1479853957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player_ship
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,7 +34,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4497989111615107151}
+  - {fileID: 5691444823288964942}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -107,6 +108,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &1153316793
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830980005548932612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
 --- !u!114 &1159556346602313872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,18 +174,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_MoveForce: 100000
-  m_RotationForce: 100
---- !u!1001 &8110986973151239649
+  m_RotationForce: 300000
+--- !u!1001 &658197216
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 3830980005548932610}
     m_Modifications:
+    - target: {fileID: 766371436140457163, guid: 5930b0c47c1d64e6098efdf3f0ea0288,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2193896423034063825, guid: 5930b0c47c1d64e6098efdf3f0ea0288,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2649500738521211200, guid: 5930b0c47c1d64e6098efdf3f0ea0288,
         type: 3}
       propertyPath: m_Name
       value: PlayerWeaponsManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649500738521211200, guid: 5930b0c47c1d64e6098efdf3f0ea0288,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171447513842682648, guid: 5930b0c47c1d64e6098efdf3f0ea0288,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5691444823742262702, guid: 5930b0c47c1d64e6098efdf3f0ea0288,
         type: 3}
@@ -227,9 +264,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5930b0c47c1d64e6098efdf3f0ea0288, type: 3}
---- !u!4 &4497989111615107151 stripped
+--- !u!4 &5691444823288964942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5691444823742262702, guid: 5930b0c47c1d64e6098efdf3f0ea0288,
     type: 3}
-  m_PrefabInstance: {fileID: 8110986973151239649}
+  m_PrefabInstance: {fileID: 658197216}
   m_PrefabAsset: {fileID: 0}

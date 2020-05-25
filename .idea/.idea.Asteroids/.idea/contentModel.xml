@@ -4,56 +4,117 @@
     <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_Asteroids.-987384261.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
-      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Ammunition" t="Include">
             <e p="BaseAmmunition.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
-            <e p="Rocket.cs" t="Include" />
+            <e p="Missile.cs" t="Include" />
           </e>
           <e p="Asteroid" t="Include">
-            <e p="Asteroid.cs" t="Include" />
             <e p="AsteroidDestroyManager.cs" t="Include" />
-            <e p="AsteroidSetup.cs" t="Include" />
+            <e p="AsteroidHealth.cs" t="Include" />
+            <e p="AsteroidManager.cs" t="Include" />
             <e p="AsteroidSpawnManager.cs" t="Include" />
-            <e p="IAsteroid.cs" t="Include" />
-            <e p="IAsteroidDestroyManager.cs" t="Include" />
+          </e>
+          <e p="EnergyBall" t="Include">
+            <e p="EnergyBall.cs" t="Include" />
+            <e p="EnergyBallDestroyManager.cs" t="Include" />
           </e>
           <e p="Engine" t="Include">
             <e p="BaseEngine.cs" t="Include" />
-            <e p="BaseEngineHandler.cs" t="Include" />
+            <e p="BaseEngineInputHandler.cs" t="Include" />
             <e p="EngineParts" t="Include">
               <e p="IEngine.cs" t="Include" />
-              <e p="IEngineHandler.cs" t="Include" />
+              <e p="IEngineInputHandler.cs" t="Include" />
               <e p="IMovable.cs" t="Include" />
               <e p="IRotatableZAxis.cs" t="Include" />
             </e>
           </e>
           <e p="IDamageable.cs" t="Include" />
+          <e p="IDestroyManager.cs" t="Include" />
+          <e p="ObjectPool" t="Include">
+            <e p="ObjectPool.cs" t="Include" />
+            <e p="ObserveOnDisable.cs" t="Include" />
+            <e p="PoolIdentifier.cs" t="Include" />
+          </e>
+          <e p="ObservablePattern" t="Include">
+            <e p="ActionToObserver.cs" t="Include" />
+            <e p="CompositeDisposable.cs" t="Include" />
+            <e p="ExtensionMethods" t="Include">
+              <e p="ExtensionMethodsCompositeDisposable.cs" t="Include" />
+              <e p="ExtensionMethodsIDisposable.cs" t="Include" />
+            </e>
+            <e p="ISubject.cs" t="Include" />
+            <e p="ObservableProperty.cs" t="Include" />
+            <e p="Operators" t="Include">
+              <e p="MapOperator.cs" t="Include" />
+              <e p="ObservableOperators.cs" t="Include" />
+              <e p="OnceOperator.cs" t="Include" />
+              <e p="SkipOperator.cs" t="Include" />
+              <e p="WhereOperator.cs" t="Include" />
+            </e>
+            <e p="Subject.cs" t="Include" />
+          </e>
           <e p="PlayerShip" t="Include">
             <e p="PlayerEngineInput.cs" t="Include" />
-            <e p="PlayerShip.cs" t="Include" />
+            <e p="PlayerShipHealth.cs" t="Include" />
             <e p="PlayerWeaponInput.cs" t="Include" />
           </e>
+          <e p="ScreenWrapping" t="Include">
+            <e p="ScreenWrappingManager.cs" t="Include" />
+          </e>
           <e p="SpaceObject.cs" t="Include" />
+          <e p="StateMachine" t="Include">
+            <e p="State.cs" t="Include" />
+            <e p="StateManager.cs" t="Include" />
+            <e p="States" t="Include">
+              <e p="FollowTargetAtDistance.cs" t="Include" />
+              <e p="RetreatFromTarget.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Tests" t="Include">
+            <e p="EditModeTest" t="Include">
+              <e p="ReactiveTest" t="Include">
+                <e p="ReactiveTest.cs" t="Include" />
+              </e>
+            </e>
+            <e p="PlayModeTest" t="Include">
+              <e p="AsteroidTest" t="Include">
+                <e p="AsteroidTest.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="TextListener.cs" t="Include" />
+          <e p="UFO" t="Include">
+            <e p="UFODesroyManager.cs" t="Include" />
+            <e p="UFOEngineInput.cs" t="Include" />
+            <e p="UFOHealth.cs" t="Include" />
+            <e p="UFOSpawner.cs" t="Include" />
+            <e p="UFOStateMachine.cs" t="Include" />
+            <e p="UFOWeaponInput.cs" t="Include" />
+          </e>
           <e p="Weapon" t="Include">
             <e p="BaseWeapon.cs" t="Include" />
-            <e p="BaseWeaponHandler.cs" t="Include" />
+            <e p="BaseWeaponInputHandler.cs" t="Include" />
             <e p="BulletWeapon.cs" t="Include" />
-            <e p="RocketWeapon.cs" t="Include" />
+            <e p="MissileWeapon.cs" t="Include" />
+            <e p="RepulseWeapon.cs" t="Include" />
             <e p="WeaponManager.cs" t="Include" />
             <e p="WeaponParts" t="Include">
               <e p="IWeapon.cs" t="Include" />
-              <e p="IWeaponsHandler.cs" t="Include" />
+              <e p="IWeaponInputHandler.cs" t="Include" />
             </e>
           </e>
         </e>
       </e>
       <e p="Asteroids.sln" t="IncludeFlat" />
+      <e p="MyAssembly.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="PlayModeTest.csproj" t="IncludeRecursive" />
       <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="Tests.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

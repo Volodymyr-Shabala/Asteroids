@@ -23,4 +23,10 @@ public class BaseEngine : MonoBehaviour, IEngine
     {
         m_Rigidbody.AddTorque(amount * Time.deltaTime * m_RotationForce, ForceMode2D.Force);
     }
+
+    public void Push(Vector2 force, float rotation)
+    {
+        m_Rigidbody.AddForce(force, ForceMode2D.Impulse);
+        m_Rigidbody.AddTorque(rotation, ForceMode2D.Impulse);
+    }
 }

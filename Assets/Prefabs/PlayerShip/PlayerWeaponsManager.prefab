@@ -117,7 +117,7 @@ MonoBehaviour:
     shootPositions:
     - {fileID: 865193546217953634}
     - {fileID: 374322033901478186}
-  m_WeaponHandler: {fileID: 4950265874030144459, guid: a67511bafe9fe43ada281b5a67ec8065,
+  m_WeaponInputHandler: {fileID: 4950265874030144459, guid: a67511bafe9fe43ada281b5a67ec8065,
     type: 3}
 --- !u!114 &3962218383404612395
 MonoBehaviour:
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8861816610b04b14adf3af281d03fa4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_WeaponsInput: 6b0000006c000000
 --- !u!1 &5171447513842682648
 GameObject:
   m_ObjectHideFlags: 0
